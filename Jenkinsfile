@@ -20,7 +20,11 @@ pipeline {
   
     stage('Build') { 
       steps {
-        sh 'mvn clean install'
+        script {
+          mvnHome = tool name: 'Maven 3.8.4', type: 'maven'
+          sh "${mvnHome}/bin/mvn clean install"
+        }
+        
       }
     } 
 
