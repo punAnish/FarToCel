@@ -3,7 +3,7 @@ pipeline {
 
   tools {
     git 'Default'
-    maven 'MAVEN_HOME
+    maven 'MAVEN_HOME'
   }
 
   environment {
