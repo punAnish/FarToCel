@@ -1,5 +1,9 @@
 pipeline { 
   agent any
+  tools {
+    git 'Default'
+    maven 'MAVEN_HOME'
+  }
   environment {
     PATH = "${env.PATH}:/usr/bin" 
     // Update the PATH to include the directory of cmd.exe 
