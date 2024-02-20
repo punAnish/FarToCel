@@ -1,6 +1,10 @@
 pipeline { 
   agent any
 
+  tools {
+    git 'Default'
+  }
+
   environment {
     PATH = "${env.PATH}:/usr/bin" 
     // Update the PATH to include the directory of cmd.exe 
