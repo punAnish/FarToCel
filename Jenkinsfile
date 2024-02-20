@@ -8,7 +8,7 @@ pipeline {
   environment {
     PATH = "${env.PATH}:/usr/bin" 
     // Update the PATH to include the directory of cmd.exe 
-    GIT_CREDENTIALS = credentials('anishPun')
+    GIT_CREDENTIALS = credentials('punAnish')
   }
 
   stages { 
