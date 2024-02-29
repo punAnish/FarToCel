@@ -1,11 +1,9 @@
 pipeline { 
   agent any
-
   tools {
     git 'Default'
     maven 'MAVEN_HOME'
   }
-
   environment {
     PATH = "${env.PATH}:/usr/bin" 
     // Update the PATH to include the directory of cmd.exe 
@@ -18,15 +16,6 @@ pipeline {
         git branch: 'main', credentialsId: 'punAnish', url: 'https://github.com/punAnish/FarToCel.git'
       } 
     }
-  
-    stage('Build') { 
-      steps {
-        script {
-          sh 'mvn clean install'
-        }
-        
-      }
-    } 
 
     stage('Test') {
       steps{
@@ -43,3 +32,4 @@ pipeline {
     }
   }
 }
+    
