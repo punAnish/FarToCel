@@ -14,4 +14,9 @@ public class FahrenheitToCelsiusTest {
     public void testKelvinToCelsius() {
         assertEquals(0.001, FahrenheitToCelsius.kelvinToCelsius(273.15f), 0.001);
     }
+
+    @Test
+    public void testKelvinToFahrenheit() {
+        assertEquals(59.050018310546875, FahrenheitToCelsius.kelvinToFahrenheit(300.2f), 0.001);
+    }
 }

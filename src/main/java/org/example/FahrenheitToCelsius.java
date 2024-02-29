@@ -11,4 +11,9 @@ public class FahrenheitToCelsius {
     public static float kelvinToCelsius(float kelvin) {
         return (float) (kelvin - 273.15f);
     }
+
+    // method to convert Kelvin to Fahrenheit
+    public static float kelvinToFahrenheit(float kelvin) {
+        return (float) ((kelvin -273.15f) * (9/5) + 32);
+    }
 }
