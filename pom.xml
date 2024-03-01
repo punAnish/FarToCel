@@ -26,6 +26,7 @@
     </dependency>
   </dependencies>
   <build>
+    <finalName>interconversions</finalName>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -34,6 +35,19 @@
         <configuration>
           <source>17</source>
           <target>17</target>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.2.0</version> <!-- Replace with the latest version available -->
+        <configuration>
+          <archive>
+            <manifest>
+              <mainClass>org.example.FahrenheitToCelsius</mainClass>
+            </manifest>
+            </archive>
         </configuration>
       </plugin>
 
